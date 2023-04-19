@@ -1,7 +1,7 @@
 
 
-let search = document.querySelector('.input-group-text')
-let input = document.querySelector('.form-control')
+let search = document.querySelector('#search')
+let input = document.querySelector('.input')
 
 const fetch = async (params) => {
     let result = await fetch('api')
@@ -9,14 +9,15 @@ const fetch = async (params) => {
 
     
 }
- let array = ["merlot", "malbec", "reisling"]
+ let wine = ["merlot", "malbec", "reisling"]
 const createEl = (array) => {
     let pairedWines = document.querySelector('#pairedWines')
     for(i= 0; i< array.length; i++){
    let wineResult = document.createElement('ul')
     wineResult.innerHTML = array[i]
+    
     pairedWines.append(wineResult)
-    }
+}
     
 }
 
@@ -26,10 +27,11 @@ search.addEventListener('click',(e) => {
         console.log(input.value);
     }
     else{
-        input.placeholder = "Whoops! Enter a food to search for: dish, ingredient, or cuisine"
+        input.placeholder = "Whoops! Enter a dish, ingredient, or cuisine"
     }
     // fetch()
-    createEl(array)
+    createEl(wine)
+    
     
 })
 
@@ -38,15 +40,15 @@ search.addEventListener('click',(e) => {
 
 
 
-input.addEventListener('keypress', (event) => {
-    if(event.key === 'Enter' && input.value.length >0){
-        console.log(input.value)
-    }
+// input.addEventListener('keypress', (event) => {
+//     if(event.key === 'Enter' && input.value.length >0){
+//         console.log(input.value)
+//     }
 
-    else if(event.key === 'Enter' && input.value.length <= 0){
-        input.placeholder = "Whoops! Enter a food to search for: dish, ingredient, or cuisine"
-    }
+//     else if(event.key === 'Enter' && input.value.length <= 0){
+//         input.placeholder = "Whoops! Enter a dish, ingredient, or cuisine"
+//     }
 
-    // fetch()
-    createEl(array)
-})
+//     // fetch()
+//     createEl(wine)
+// })
