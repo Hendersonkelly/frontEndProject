@@ -1,0 +1,10 @@
+/* #335c67 - dark blue
+#fff3b0 - off-white
+#e09f3e - gold
+#9e2a2b - red
+#540b0e - burgundy */
+
+.container-fluid {
+    background-color: #540b0e;
+    height: 100vh;
+}

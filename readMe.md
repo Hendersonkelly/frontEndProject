@@ -1,28 +1,21 @@
-# frontEndProject
-# This is heading 1
 
-##This is the second heading
+# Whine-O's:  Wine Fakespert
+## A tool to give you a wine pairing and description of the recommended wine
 
-### This is the third heading
+## MINIMUM VIABLE PRODUCT:
+- use one API to recommend a wine pairing
+- use a second API to provide a description of the wine
 
--list 1
--list 2
+## STRETCH GOALS:
+- Recipe and/or restaurant suggestion
+- Reverse:  user inputs wine and app outputs food suggestions
+- Provide a source for a specific bottle and chat GPT gives details on it
+
+Color Scheme:
+#335c67 - dark blue
+#fff3b0 - off-white
+#e09f3e - gold
+#9e2a2b - red
+#540b0e - burgundy
 
 
-this is **some** text *more* text
-
-my variable is named `arr`and this is what i like
-
-```js
-let arr = []
-let obj = {}
-```
-
-[this is my hyperlink] (http://google.com)
-
-![](image link )
-
-:blush:
-> this is a block qoute
-
-this is a == highlighted == sentnece
