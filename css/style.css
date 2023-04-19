@@ -14,11 +14,20 @@ body {
     background-size: auto cover;
 }
 
-.btn-primary {
+.btn-color {
+    color: #540b0e;
+    margin: 30px;
+}
+
+#pairMeButton {
+    text-decoration: none;
+
     background-color: #540b0e;
+}
+
+.button {
     color: #fff3b0;
-    border-radius: 50%;
-    margin: 30px
+    text-decoration: none;
 }
 
 .burgundy-bgc {
@@ -65,6 +74,7 @@ body {
 
 #description {
     margin-top: 50px;
+    margin-bottom: 30px;
     background-color: rgb(84, 11, 14, 0.9);
     padding: 15px;
     font-size: 20px;
