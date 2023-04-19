@@ -1,0 +1,83 @@
+/* #335c67 - dark blue
+#fff3b0 - off-white
+#e09f3e - gold
+#9e2a2b - red
+#540b0e - burgundy */
+/*single glass url("https://images.unsplash.com/photo-1602800268804-4a850d622360?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"); */
+/* wall url("https://images.unsplash.com/photo-1572095755816-4a48d680f864?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=712&q=80") */
+/* four glasses url("https://images.unsplash.com/photo-1568213816046-0ee1c42bd559?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80"); */
+
+body {
+    background-image: url("https://images.unsplash.com/photo-1572095755816-4a48d680f864?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=712&q=80");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: auto cover;
+}
+
+.btn-primary {
+    background-color: #540b0e;
+    color: #fff3b0;
+    border-radius: 50%;
+    margin: 30px
+}
+
+.burgundy-bgc {
+    background-color: #540b0e;
+}
+
+.container-fluid {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: #fff3b0;
+    text-align: center;
+    background-color: rgb(51, 92, 103, 0.5);
+}
+
+#welcomeText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+    width: 100%;
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 0px;
+}
+
+#title {
+    justify-content: center;
+    color: #fff3b0;
+    font-size: 50px;
+    font-weight: bold;
+    width: 100vw;
+    background-color: rgb(84, 11, 14, 0.9);
+    margin: 0px;
+}
+
+#intro {
+    background-color: rgb(84, 11, 14, 0.9);
+    font-style: italic;
+    width: 100%;
+    margin: 0px;
+}
+
+#description {
+    margin-top: 50px;
+    background-color: rgb(84, 11, 14, 0.9);
+    padding: 15px;
+    font-size: 20px;
+}
+
+
+/* .parallax {
+    background-color: #540b0e;
+    min-height: 100px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 20px;
+    color: white;
+} */
