@@ -4,7 +4,17 @@
 #9e2a2b - red
 #540b0e - burgundy */
 
+/* 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 */
+
+body {
+    background-image: url("https://images.unsplash.com/photo-1568213816046-0ee1c42bd559?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: auto cover;
+}
+
 .container-fluid {
+
     background-color: #540b0e;
     height: 100vh;
 }
@@ -159,3 +169,39 @@
     width: 40px;
     background-color: #fff;
   }
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #e09f3e;
+    text-align: center;
+}
+
+#pairingSearch {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 40vh;
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    font-size: 30px;
+    background-color: rgb(255, 255, 255, 0.2);
+}
+
+
+
+.modal-body {
+    background-color: #335c67;
+}
+
+.modal-header {
+    background-color: #335c67;
+}
+
+.modal-footer {
+    background-color: #335c67;
+}
+
