@@ -20,7 +20,7 @@ body {
 }
 
 
-
+.container-fluid {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -55,4 +55,3 @@ body {
 .modal-footer {
     background-color: #335c67;
 }
-
