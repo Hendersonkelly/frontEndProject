@@ -1,3 +1,6 @@
+<<<<<<< HEAD
+# frontEndProject
+=======
 
 # Whine-O's:  Wine Fakespert
 ## A tool to give you a wine pairing and description of the recommended wine
@@ -19,3 +22,4 @@ Color Scheme:
 #540b0e - burgundy
 
 
+>>>>>>> 4116b306a4c9a8b1b30d11957ffef18fc44d189d
