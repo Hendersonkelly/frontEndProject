@@ -13,7 +13,7 @@ body {
     background-size: auto cover;
 }
 
-.container-fluid {
+.container-fluid m-0 p-0 position-relative {
 
     background-color: #540b0e;
     height: 100vh;
@@ -35,7 +35,7 @@ body {
     margin: 0px;
     padding: 0px;
     font-size: 30px;
-    background-color: rgb(255, 255, 255, 0.2);
+  
 }
 
 
@@ -208,4 +208,8 @@ body {
     
     
   }
+
+
+
+  
   
