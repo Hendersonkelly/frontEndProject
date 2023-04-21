@@ -1,4 +1,5 @@
 
+
 *{
     box-sizing: border-box;
     border: none;
@@ -8,14 +9,47 @@
 }
 body {
     background-image: url("https://i0.wp.com/foodwineexperience.com/wp-content/uploads/2019/11/FoodandWineExperience_webbackground.jpg?ssl=1");
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-size:cover;
+    background-repeat:no-repeat;
     width: 100vw;
-    height:100vh;
-    
+    height: 100vh;
     font-family: 'Josefin Sans', sans-serif;
    
 }
+
+
+
+
+ .btn-color {
+    color: #540b0e;
+    margin: 30px;
+} 
+
+#pairMeButton {
+    text-decoration: none;
+    background-color: #540b0e;
+    border: 1px solid #fff3b0;
+    padding: 10px 15px;
+}
+
+#pairMeButton:hover {
+    box-shadow: 0 12px 16px 0 rgb(224, 159, 62, 0.30), 0 17px 50px 0 rgba(224, 159, 62, 0.19);
+}
+
+.button {
+    color: #fff3b0;
+    text-decoration: none;
+}
+
+.button:hover {
+    color: #fff3b0;
+    text-decoration: none;
+}
+
+#pairMeButton {
+    border-radius: 8%
+} 
+
 .burgundy-bgc {
     background-color: #540b0e;
 }
@@ -29,6 +63,56 @@ body {
     background-color: rgb(51, 92, 103, 0.5);
     overflow-x: hidden;
 }
+
+#welcomeText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+    width: 100%;
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 0px;
+}
+
+#title {
+    justify-content: center;
+    color: #fff3b0;
+    font-size: 50px;
+    font-weight: bold;
+    width: 60vw;
+    background-color: rgb(84, 11, 14, 0.9);
+    margin: 0px;
+}
+
+#intro {
+    background-color: rgb(84, 11, 14, 0.9);
+    font-style: italic;
+    width: 60vw;
+    margin: 0px;
+}
+
+#description {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    background-color: rgb(84, 11, 14, 0.9);
+    padding: 15px;
+    font-size: 20px;
+    width: 60vw;
+}
+
+
+/* .parallax {
+    background-color: #540b0e;
+    min-height: 100px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 20px;
+    color: white;
+} */
 a{
     color: #540b0e;
     
@@ -48,13 +132,12 @@ header{
     height: 100px;
     background-color: white ;
     box-shadow: 0px 3px 8px  rgba(0, 0 , 0, 25%);
-    padding: 20px;}
+    padding: 20px;
     
 
    
-
-
-
+    
+}
 header .container-fluid{
     width: 100%;
     padding: 0 60px;
@@ -291,26 +374,46 @@ a{
     color: #335c67;
 }
 
-
-#about {
+ #about {
 
     color: #fff3b0;
-    font-size: 50px;
-    font-weight: bold;    
+    font-size: 5vmin;
+    position: absolute;
+    font-weight: bold;
     background-color: rgb(84, 11, 14, 0.9);
-    position: relative;
-    width: 65vh;
-
+    padding: 10px;   
   
-}
+} 
 
 #aboutContainer{
-    height: 40vh;
-    background-color: transparent;
     display: flex;
-    flex-direction: column;
-    text-align: center;
+
+   align-items: center;
+   text-align: center;
+   justify-content: center;
+   height:300px;
+   position: relative;
+   
     
-    position: absolute;
-    
+
 }
+
+#bios{
+    font-size: 20px;
+    align-items:end;
+    justify-content:end;
+    text-align: start;
+    
+    
+  
+}
+#bioContainer{
+
+    margin: auto;
+    width: 85vmin;
+    align-items:end;
+    justify-content:end;
+
+
+}  
+
