@@ -1,15 +1,18 @@
 
 
-let search = document.querySelector('#search')
-let input = document.querySelector('.input')
+let search = document.querySelector('#input-group-lg-example')
 
-const fetch = async (params) => {
-    let result = await fetch('api')
+let input = document.querySelector('.form-control')
+let food = input.value
+const fetch = async (food) => {
+    let url = "https://api.spoonacular.com/"+food+"/wine/pairing?apiKey=20045f2079b44c89921d3eced6009bc5"
+    let result = await fetch(url)
     let data = await result.json()
+    console.log(data);
 
     
 }
- let wine = ["merlot", "malbec", "reisling"]
+ 
 const createEl = (array) => {
     let pairedWines = document.querySelector('#pairedWines')
     for(i= 0; i< array.length; i++){
@@ -21,16 +24,17 @@ const createEl = (array) => {
     
 }
 
-search.addEventListener('click',(e) => {
+search.addEventListener('click', (e) => {
     
     if(input.value.length >0){
         console.log(input.value);
+        fetch(food)
     }
     else{
         input.placeholder = "Whoops! Enter a dish, ingredient, or cuisine"
     }
-    // fetch()
-    createEl(wine)
+    
+   
     
     
 })
