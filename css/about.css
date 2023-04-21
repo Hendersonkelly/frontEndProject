@@ -296,12 +296,21 @@ a{
 
     color: #fff3b0;
     font-size: 50px;
-    font-weight: bold;
-    align-items: center;
-    
+    font-weight: bold;    
     background-color: rgb(84, 11, 14, 0.9);
-    margin: 0px;
-    text-align: center;
+    position: relative;
+    width: 65vh;
 
   
+}
+
+#aboutContainer{
+    height: 40vh;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    
+    position: absolute;
+    
 }
