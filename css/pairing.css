@@ -17,10 +17,6 @@ body {
 
     background-color: #540b0e;
     height: 100vh;
-}
-
-
-.container-fluid {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -33,7 +29,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
+    text-align:center;
     min-height: 40vh;
     font-family: 'Josefin Sans', sans-serif;
     margin: 0px;

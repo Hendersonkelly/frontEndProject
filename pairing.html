@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pair Me!</title>
+    <link rel="stylesheet" href="css/search.css">
     <link rel="stylesheet" href="css/pairing.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
@@ -95,15 +96,24 @@
 
         <div id="pairingSearch">
             <div id="instructions">What dish or ingredient that you would like to pair?</div>
-            <div> <div class="input-group input-group-lg">
-                <span class="input-group-text" id="input-group-lg-example" >Pair Me!</span>
-                <input type="text" class="form-control" aria-label="Large input group" aria-describedby="input-group-lg" placeholder="Enter a dish, ingredient, or cuisine">
-              </div></div>
+            <div>  <div id="cover">
+       
+                <div class="tb">
+                  <div  class="td"><input id="input" type="text" placeholder="Enter dish, ingredient, or cuisine" autocomplete= "off" ></div>
+                  <div class="td" id="s-cover">
+                    <button id="search" type="submit">
+                      <div id="s-circle"></div>
+                      <span></span>
+                    </button>
+                  </div>
+                </div>
+             
+            </div></div>
         </div>
 
         <!-- Button trigger modal -->
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter" id="pairedWines">
-            Wine Description
+        <button type="button" class="btn" data-toggle="modal" data-target="#exampleModalCenter" id="pairedWines">
+           
         </button>
 
         <!-- Modal -->
