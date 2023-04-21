@@ -28,7 +28,7 @@
   
   #cover {
     position: absolute;
-    top: 20%;
+    top: 37%;
     left: 0;
     right: 0;
     width: 750px;
@@ -96,7 +96,7 @@
   button span:before,
   button span:after {
     content: "";
-    position: fixed;
+    position:fixed;
     bottom: 0;
     right: 0;
     width: 45px;
@@ -142,14 +142,17 @@
 
   ul{
     text-align: center;
-    color:#fff3b0;
+    color:#335c67;
   }
   #pairedWines{
-    top: 25%;
-   left: 23%;
     width: 55%;
-    height: 40%;
+    height: 50%;
     background-color:3540b0e ;
+    text-align: center;
+    align-self: center;
+    font-size: 25px;
+    
+
     
     
   }
