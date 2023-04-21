@@ -4,18 +4,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pair Me!</title>
-    <link rel="stylesheet" href="css/pairing.css">
+    <title>Pocket Somm</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
         integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css
-        ">
-    </head>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+        integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+        crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="fontawesome-free-6.4.0-web/css/all.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css
+    ">
+</head>
+
 <body>
-    <div class="container-fluid position-relative m-0 p-0">
-        <div>
-        <header>
+
+    <div class="container-fluid m-0 p-0 position-relative">
+        <main>
+            <header>
             <div class="container-fluid">
                 <div class="Navbar-logo">
                     <img src="image/Capture.PNG" alt="logo"> 
@@ -23,7 +34,7 @@
                 </div>
                 <div class="Navbar-items d-none d-xl-flex">
                     <div class="items">
-                        <a href="index.html" >Home</a>
+                        <a href="index.html" style="color:#540b0e" >Home</a>
 
                     </div>
                     <div class="items">
@@ -72,10 +83,10 @@
               </div>
 
               <div class="modal-line">
-                  <i class="fa-solid fa-circle-info"></i><a href="/About">About</a>
+                  <i class="fa-solid fa-circle-info"></i><a href="about.html">About</a>
               </div>
 
-              <a href="/Contact" class="navb-button" type="button">Contact</a>
+              <a href="contact.html" class="navb-button" type="button">Contact</a>
             </div>
 
   </div>
@@ -87,57 +98,16 @@
             <a target="_blank" href="#"><i class="fa-brands fa-facebook"></i></a>
             </div>
     </div>
-            
+           
           
         </header>
+         <!--End of nav bar from above--------  --> 
+
+
+        </main>
     </div>
-</div>
 
-        <div id="pairingSearch">
-            <div id="instructions">What dish or ingredient that you would like to pair?</div>
-            <div> <div class="input-group input-group-lg">
-                <span class="input-group-text" id="input-group-lg-example" >Pair Me!</span>
-                <input type="text" class="form-control" aria-label="Large input group" aria-describedby="input-group-lg" placeholder="Enter a dish, ingredient, or cuisine">
-              </div></div>
-        </div>
-
-        <!-- Button trigger modal -->
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter" id="pairedWines">
-            Wine Description
-        </button>
-
-        <!-- Modal -->
-        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
-            aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLongTitle">Varietal</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        Wine Description
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    
-    
-
-
-
-    <script src="js/search.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
-        integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
-        crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
