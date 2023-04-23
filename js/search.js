@@ -116,10 +116,6 @@
 // })
 
 
-
-
-
-
 // input.addEventListener('keypress', (event) => {
 //     clear()
 //     if(event.key === "Enter" && input.value.length >0){
@@ -137,40 +133,27 @@
 // })
 
 
-require("dotenv").config()
-const apiKey = process.env.OPENAI_API_KEY
+import { apiKey } from './key.js';
+console.log(apiKey);
 
-const { Configuration, OpenAIApi } = require("openai");
-const configuration = new Configuration({
-    apiKey: apiKey
-});
-
-const openai = new OpenAIApi(configuration);
-
-// async function start() {
-//     const response = await openai.createCompletion({
-//         model: "text-davinci-003",
-//         prompt: "cabernet sauvignon wine",
-//         temperature: 0,
-//         max_tokens: 1000
-//     })
-//     console.log(response.data.choices[0].text);
-// }
-
-// start()
-
-let winePractice = document.querySelector('#wineLookup')
-winePractice.addEventListener('click', (e) => {
-    console.log('hello world');
-    async function start() {
-        const response = await openai.createCompletion({
+async function fetchData() {
+    const response = await fetch("https://api.openai.com/v1/completions", {
+        method: 'POST',
+        headers: {
+            Authorization: `Bearer ${apiKey}`,
+            "Content-Type": 'application/json'
+        },
+        body: JSON.stringify({
             model: "text-davinci-003",
-            prompt: "cabernet sauvignon wine",
+            prompt: 'describe chardonnay',
             temperature: 0,
-            max_tokens: 1000
+            max_tokens: 300
         })
-        console.log(response.data.choices[0].text);
-    }
-    
-    start()
-})
+    })
+    const data = await response.json()
+    console.log(data.choices[0].text);
+    let description = document.querySelector('#wineLookup')
+    description.innerHTML = data.choices[0].text;
+}
+
+fetchData()
