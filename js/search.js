@@ -10,19 +10,19 @@
 //     let data = await result.json()
 //     console.log(data);
 
-    
+
 // }
- 
+
 // const createEl = (array) => {
 //     let pairedWines = document.querySelector('#pairedWines')
-  
+
 //     for(i= 0; i< array.length; i++){
 //    let wineResult = document.createElement('ul')
 //     wineResult.innerHTML = array[i]
-    
+
 //     pairedWines.append(wineResult)
 // }
-    
+
 // }
 
 // search.addEventListener('click', (e) => {
@@ -34,10 +34,10 @@
 //     else{
 //         input.placeholder = "Whoops! Enter a dish, ingredient, or cuisine"
 //     }
-   
-   
-    
-    
+
+
+
+
 // })
 
 
@@ -69,21 +69,21 @@
 //     let data = await result.json()
 //     console.log(data);
 
-    
+
 // }
- 
+
 // const createEl = (array) => {
 
 //     let pairedWines = document.querySelector('#pairedWines')
-  
+
 //     for(i= 0; i< array.length; i++){
 //    let wineResult = document.createElement('ul')
 //     wineResult.innerHTML = array[i]
 //     wineResult.setAttribute('id', 'ul')
-    
+
 //     pairedWines.append(wineResult)
 // }
-    
+
 // }
 
 // const clear = () => {
@@ -93,7 +93,7 @@
 //         pairedWines.removeChild(pairedWines.firstChild)
 //     }
 // }
-    
+
 
 
 // search.addEventListener('click', (e) => {
@@ -105,14 +105,14 @@
 //         // getWine(food)
 //         createEl(array)
 //        input.value= ""
-        
+
 //     }
 //     else{
 //         input.placeholder = "Whoops! Enter a dish, ingredient, or cuisine"
 //     }
-   
-    
-    
+
+
+
 // })
 
 
@@ -133,13 +133,12 @@
 //         input.placeholder = "Whoops! Enter a dish, ingredient, or cuisine"
 //     }
 
-    // getWine(food)
+// getWine(food)
 // })
 
 
 require("dotenv").config()
 const apiKey = process.env.OPENAI_API_KEY
-
 
 const { Configuration, OpenAIApi } = require("openai");
 const configuration = new Configuration({
@@ -148,14 +147,30 @@ const configuration = new Configuration({
 
 const openai = new OpenAIApi(configuration);
 
-async function start() {
-    const response = await openai.createCompletion({
-        model: "text-davinci-003",
-        prompt: "cabernet sauvignon wine",
-        temperature: 0,
-        max_tokens: 1000
-    })
-    console.log(response.data.choices[0].text);
-}
+// async function start() {
+//     const response = await openai.createCompletion({
+//         model: "text-davinci-003",
+//         prompt: "cabernet sauvignon wine",
+//         temperature: 0,
+//         max_tokens: 1000
+//     })
+//     console.log(response.data.choices[0].text);
+// }
 
-start()
+// start()
+
+let winePractice = document.querySelector('#wineLookup')
+winePractice.addEventListener('click', (e) => {
+    console.log('hello world');
+    async function start() {
+        const response = await openai.createCompletion({
+            model: "text-davinci-003",
+            prompt: "cabernet sauvignon wine",
+            temperature: 0,
+            max_tokens: 1000
+        })
+        console.log(response.data.choices[0].text);
+    }
+    
+    start()
+})
