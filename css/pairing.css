@@ -7,10 +7,12 @@
 /* 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 */
 
 body {
+
   background-image: url("https://images.unsplash.com/photo-1568213816046-0ee1c42bd559?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80");
   background-size: cover;
   background-repeat: no-repeat;
   background-size: auto cover;
+
 
 
 }
@@ -28,17 +30,19 @@ body {
 }
 
 #pairingSearch {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  min-height: 25vh;
-  font-family: 'Josefin Sans', sans-serif;
-  margin: 8%;
-  padding: 0px;
-  font-size: 30px;
-  ;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+    min-height: 25vh;
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 8%;
+    padding: 0px;
+    font-size: 30px;
+  
+
 }
 
 
@@ -59,6 +63,7 @@ body {
 }
 
 * {
+
   outline: none;
 }
 
@@ -217,3 +222,4 @@ ul {
   left: 20%;
 
 }
+

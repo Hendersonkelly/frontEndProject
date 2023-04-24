@@ -27,6 +27,7 @@ async function getWine() {
     console.log(pairingsArr.length);
     // console.log(pairings);
 
+
     let pairedWines = document.querySelector('#pairedWines')
     let wineResultList = document.createElement('ul')
     pairedWines.append(wineResultList)
@@ -104,6 +105,34 @@ input.addEventListener('keypress', (event) => {
     else if (event.key === 'Enter' && input.value.length <= 0) {
         input.placeholder = "Whoops! Enter a dish, ingredient, or cuisine"
     }
+
+})
+
+
+
+
+
+
+
+
+
+
+let pairings = document.querySelectorAll('#pairedWines')
+let varietal = document.querySelector('.modal-title')
+let description = document.querySelector('.modal-body')
+pairings.forEach(pairing => {
+    pairing.addEventListener('click', async (e) => {
+        const response = await fetch(`https://api.spoonacular.com/food/wine/description?wine=${e.target.innerHTML}&apiKey=20045f2079b44c89921d3eced6009bc5`, {
+        
+        })
+        const data = await response.json()
+        console.log(data);
+        // let description = document.querySelector('#wineLookup')
+        // description.innerHTML = data.choices[0].text;
+        console.log(data);
+        varietal.textContent = e.target.innerHTML;
+        description.textContent = data;
+    })
 
 })
 
