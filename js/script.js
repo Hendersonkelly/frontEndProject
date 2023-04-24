@@ -13,13 +13,13 @@
 
 //     // This is for the icon-click on when it response to different size screen----------------------------------------
 
-// 	const mobileToggler = document.querySelector('.mobile-toggler.d-lg-none');
-// 	const modalTrigger = mobileToggler.querySelector('a[data-bs-toggle="modal"]');
+	const mobileToggler = document.querySelector('.mobile-toggler.d-lg-none');
+	const modalTrigger = mobileToggler.querySelector('a[data-bs-toggle="modal"]');
 	
-// 	modalTrigger.addEventListener('click', (event) => {
-// 	  event.preventDefault();
-// 	  const modalId = modalTrigger.dataset.bsTarget;
-// 	  const modalElement = document.querySelector(modalId);
-// 	  const modal = new bootstrap.Modal(modalElement);
-// 	  modal.show();
-// 	});
+	modalTrigger.addEventListener('click', (event) => {
+	  event.preventDefault();
+	  const modalId = modalTrigger.dataset.bsTarget;
+	  const modalElement = document.querySelector(modalId);
+	  const modal = new bootstrap.Modal(modalElement);
+	  modal.show();
+	});
