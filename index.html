@@ -26,15 +26,20 @@
 
     <div class="container-fluid m-0 p-0 position-relative">
         <main>
-            <header>
-            <div class="container-fluid">
-                <div class="Navbar-logo">
-                    <img src="image/Capture.PNG" alt="logo"> 
+            <header> // HEADER STARTS HERE
+                <div class="container-fluid">
+                    <div class="Navbar-logo">
+                        <img src="image/Capture.PNG" alt="logo">
+                    </div>
+                    <div class="Navbar-items d-none d-xl-flex">
+                        <div class="items">
+                            <a href="index.html" style="color:#540b0e">Home</a>
 
-                </div>
-                <div class="Navbar-items d-none d-xl-flex">
-                    <div class="items">
-                        <a href="index.html" style="color:#540b0e" >Home</a>
+                        </div>
+                   
+
+
+                    </div>
 
                     </div>
                     <div class="items">
@@ -48,46 +53,55 @@
                     <div class="items">
                         <a href="contact.html" style="color:#540b0e" type="button">Contact</a>
 
+
+                    <div class="mobile-toggler d-lg-none">
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#NavbarModal">
+                            <i class="fa-solid fa-bars"></i>
+                        </a>
                     </div>
-                   
-                    
-                </div>
-                
-                <div class="mobile-toggler d-lg-none">
-                    <a href="#" data-bs-toggle="modal" data-bs-target="#NavbarModal">
-                        <i class="fa-solid fa-bars"></i>
-                    </a>
-                </div>
-  <!-- Modal -->
+                    <!-- Modal -->
 
-  <div class="modal fade" id="NavbarModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-  aria-hidden="true">
-  <div class="modal-dialog">
-      <div class="modal-content">
+                    <div class="modal fade" id="NavbarModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
 
-          <div class="modal-header">
-              <img src="image/Capture.PNG" alt="Logo">
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
-          </div>
+                                <div class="modal-header">
+                                    <img src="image/Capture.PNG" alt="Logo">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+                                </div>
 
-          <div class="modal-body">
-              
-              <div class="modal-line">
-                  <i class="fa-solid fa-house"></i><a href="index.html">Home</a>
-              </div>
+                                <div class="modal-body">
 
-              
+                                    <div class="modal-line">
+                                        <i class="fa-solid fa-house"></i><a href="index.html">Home</a>
+                                    </div>
 
-              <div class="modal-line">
-                  <i class="fa-solid fa-file-lines"></i> <a href="pairing.html">Search</a>
-              </div>
 
-              <div class="modal-line">
-                  <i class="fa-solid fa-circle-info"></i><a href="about.html">About</a>
-              </div>
 
-              <a href="contact.html" class="navb-button" type="button">Contact</a>
-            </div>
+                                    <div class="modal-line">
+                                        <i class="fa-solid fa-file-lines"></i> <a href="pairing.html">Search</a>
+                                    </div>
+
+                                    <div class="modal-line">
+                                        <i class="fa-solid fa-circle-info"></i><a href="about.html">About</a>
+                                    </div>
+
+                                    <a href="contact.html" class="navb-button" type="button">Contact</a>
+                                </div>
+
+                            </div>
+                            <div class="mobile-modal-footer">
+
+                                <a target="_blank" href="#"><i class="fa-brands fa-instagram"></i></a>
+                                <a target="_blank" href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                                <a target="_blank" href="#"><i class="fa-brands fa-youtube"></i></a>
+                                <a target="_blank" href="#"><i class="fa-brands fa-facebook"></i></a>
+                            </div>
+                        </div>
+            </header> // HEADER ENDS HERE
+
 
   </div>
             <div class="mobile-modal-footer">
@@ -103,6 +117,7 @@
         </header>
 
             </div>
+
             <div id="welcomeText">
                 <div class="display-2 p-3" id="title">Pocket Somm</div>
                 <div class="display-6" id="intro">
@@ -115,7 +130,7 @@
                 <button id="pairMeButton">
                     <a class="button" href="pairing.html">pair me!</a>
                 </button>
-            
+
             </div>
 
 
