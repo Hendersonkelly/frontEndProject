@@ -1,92 +1,67 @@
-// DO NOT DELETE BELOW ===============================
-
-// let search = document.querySelector('#input-group-lg-example')
-
-// let input = document.querySelector('.form-control')
-// let array = ["merlot", "malbec", "riesling"]
-// const getWine = async (food) => {
-//     let url = `https://api.spoonacular.com/food/wine/pairing?food=${food}&apiKey=20045f2079b44c89921d3eced6009bc5`
-//     let result = await fetch(url)
-//     let data = await result.json()
-//     console.log(data);
-
-
-// }
-
-// const createEl = (array) => {
-//     let pairedWines = document.querySelector('#pairedWines')
-
-//     for(i= 0; i< array.length; i++){
-//    let wineResult = document.createElement('ul')
-//     wineResult.innerHTML = array[i]
-
-//     pairedWines.append(wineResult)
-// }
-
-// }
-
-// search.addEventListener('click', (e) => {
-//     let food = input.value
-//     if(input.value.length >0){
-//         // getWine(food)
-//         createEl(array)
-//     }
-//     else{
-//         input.placeholder = "Whoops! Enter a dish, ingredient, or cuisine"
-//     }
-
-
-
-
-// })
-
-
-
-
-
-
-// input.addEventListener('keypress', (event) => {
-//     if(event.key === "Enter" && input.value.length >0){
-//         event.preventDefault
-//         console.log(input.value)
-//         createEl(array)
-//     }
-
-//     else if(event.key === 'Enter' && input.value.length <= 0){
-//         input.placeholder = "Whoops! Enter a dish, ingredient, or cuisine"
-//     }
-
-//     getWine(food)
-// })
-// DO NOT DELETE ABOVE ===============================
+import { apiKey } from './key.js';
+// console.log(apiKey);
 
 let search = document.querySelector('#search')
-
-
 let input = document.querySelector('#input')
+var pairings = []
+async function getWine() {
+    const response = await fetch('https://api.openai.com/v1/completions', {
+        method: 'POST',
+        headers: {
+            Authorization: `Bearer ${apiKey}`,
+            "Content-Type": 'application/json'
+        },
+        body: JSON.stringify({
+            model: 'text-davinci-003',
+            prompt: `suggest three wine pairings in an un-numbered list ${input.value} without descriptions`,
+            temperature: 0,
+            max_tokens: 500
+        })
+    })
+    const data = await response.json()
+    pairings = data.choices[0].text;
+    console.log(pairings);
+    let pairingsArr = pairings.split("\n");
+    console.log(pairingsArr);
+    console.log(pairingsArr[2]);
+    console.log(pairingsArr.length);
+    // console.log(pairings);
 
-// let array = ["merlot", "malbec", "riesling"]
-const getWine = async (food) => {
-   
-    let result = await fetch(url)
-    let data = await result.json()
-    console.log(data);
-    const createEl = (array) => {
 
-        let pairedWines = document.querySelector('#pairedWines')
-
-        for (let i = 0; i < array.length; i++) {
-            let wineResult = document.createElement('ul')
-            wineResult.innerHTML = array[i]
-            wineResult.setAttribute('id', 'ul')
-            pairedWines.append(wineResult)
-        }
-
+    let pairedWines = document.querySelector('#pairedWines')
+    let wineResultList = document.createElement('ul')
+    pairedWines.append(wineResultList)
+    for (let i = 2; i < 5; i++) {
+        let wineResult = document.createElement('li')
+        wineResult.innerText = pairingsArr[i]
+        console.log(wineResult);
+        wineResultList.appendChild(wineResult)
     }
-    createEl(data.pairedWines)
-    console.log(pairedWines);
-}
+    // for (let i = 2; i < pairings.length; i++) {
+    //     console.log(pairings);
+    //     let wineResult = document.createElement('ul')
+    //     wineResult.setAttribute('id', 'ul')
+    //     wineResult.textContent = pairings[i];
+    //     console.log(wineResult);
+    //     pairedWines.append(wineResult)
+    // }
 
+    // const createEl = (array) => {
+    //     let pairedWines = document.querySelector('#pairedWines')
+    //     console.log(data.choices[0].text);
+    //     for (let i = 0; i < pairings.length; i++) {
+    //         console.log(pairings);
+    //         let wineResult = document.createElement('ul')
+    //         wineResult.setAttribute('id', 'ul')
+    //         wineResult.textContent = pairings[i];
+    //         console.log(wineResult);
+    //         pairedWines.append(wineResult)
+    //     }
+    //     createEl(pairedWines)
+    //     console.log(pairedWines);
+    // }
+
+}
 
 const clear = () => {
     let pairedWines = document.querySelector('#pairedWines')
@@ -113,29 +88,7 @@ search.addEventListener('click', (e) => {
         input.placeholder = "Whoops! Enter a dish, ingredient, or cuisine"
     }
 
-
-
-
 })
-
-
-
-input.addEventListener('keypress', (event) => {
-    clear()
-    if (event.key === "Enter" && input.value.length > 0) {
-        event.preventDefault
-        console.log(input.value)
-        createEl(array)
-        input.value = ""
-    }
-
-    else if (event.key === 'Enter' && input.value.length <= 0) {
-        input.placeholder = "Whoops! Enter a dish, ingredient, or cuisine"
-    }
-
-    getWine(food)
-})
-
 
 
 input.addEventListener('keypress', (event) => {
@@ -156,37 +109,7 @@ input.addEventListener('keypress', (event) => {
 })
 
 
-// import { apiKey } from './key.js';
-// console.log(apiKey);
 
-// let pairings = document.querySelectorAll('#pairedWines')
-// let varietal = document.querySelector('.modal-title')
-// let description = document.querySelector('.modal-body')
-// pairings.forEach(pairing => {
-//     pairing.addEventListener('click', async (e) => {
-//         const response = await fetch("https://api.openai.com/v1/completions", {
-//             method: 'POST',
-//             headers: {
-//                 Authorization: `Bearer ${apiKey}`,
-//                 "Content-Type": 'application/json'
-//             },
-//             body: JSON.stringify({
-//                 model: "text-davinci-003",
-//                 prompt: `describe ${e.target.innerHTML}`,
-//                 temperature: 0,
-//                 max_tokens: 300
-//             })
-//         })
-//         const data = await response.json()
-//         console.log(data);
-//         // let description = document.querySelector('#wineLookup')
-//         // description.innerHTML = data.choices[0].text;
-//         console.log(data.choices[0].text);
-//         varietal.textContent = e.target.innerHTML;
-//         description.textContent = data.choices[0].text;
-//     })
-
-// })
 
 
 
