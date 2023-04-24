@@ -1,4 +1,4 @@
-
+// DO NOT DELETE BELOW ===============================
 
 // let search = document.querySelector('#input-group-lg-example')
 
@@ -58,6 +58,8 @@
 
 //     // getWine(food)
 // })
+// DO NOT DELETE ABOVE ===============================
+
 // let search = document.querySelector('#search')
 
 // let input = document.querySelector('#input')
@@ -76,20 +78,19 @@
 
 //     let pairedWines = document.querySelector('#pairedWines')
 
-//     for(i= 0; i< array.length; i++){
-//    let wineResult = document.createElement('ul')
-//     wineResult.innerHTML = array[i]
-//     wineResult.setAttribute('id', 'ul')
-
-//     pairedWines.append(wineResult)
-// }
+//     for (i = 0; i < array.length; i++) {
+//         let wineResult = document.createElement('ul')
+//         wineResult.innerHTML = array[i]
+//         wineResult.setAttribute('id', 'ul')
+//         pairedWines.append(wineResult)
+//     }
 
 // }
 
 // const clear = () => {
 //     let pairedWines = document.querySelector('#pairedWines')
 //     let wineList = document.querySelectorAll('#ul')
-//     while (pairedWines.firstChild){
+//     while (pairedWines.firstChild) {
 //         pairedWines.removeChild(pairedWines.firstChild)
 //     }
 // }
@@ -97,17 +98,17 @@
 
 
 // search.addEventListener('click', (e) => {
-//    clear()
+//     clear()
 //     let food = input.value
 //     console.log(food);
 
-//     if(input.value.length >0){
+//     if (input.value.length > 0) {
 //         // getWine(food)
 //         createEl(array)
-//        input.value= ""
+//         input.value = ""
 
 //     }
-//     else{
+//     else {
 //         input.placeholder = "Whoops! Enter a dish, ingredient, or cuisine"
 //     }
 
