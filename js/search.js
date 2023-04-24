@@ -178,3 +178,50 @@ async function fetchData() {
 }
 
 fetchData()
+
+input.addEventListener('keypress', (event) => {
+    clear()
+    let food = input.value
+    if (event.key === "Enter" && input.value.length > 0) {
+        event.preventDefault
+        
+        getWine(food)
+       
+        input.value = ""
+    }
+
+    else if (event.key === 'Enter' && input.value.length <= 0) {
+        input.placeholder = "Whoops! Enter a dish, ingredient, or cuisine"
+    }
+
+})
+
+// openAI call starts here =====================================
+// require("dotenv").config()
+// const apiKey = process.env.OPENAI_API_KEY
+
+// const { Configuration, OpenAIApi } = require("openai");
+// const configuration = new Configuration({
+//     apiKey: apiKey
+// });
+// const openai = new OpenAIApi(configuration);
+
+// async function start() {
+//     const response = await openai.createCompletion({
+//         model: "text-davinci-003",
+//         prompt: `wine merlot`,
+//         temperature: 0,
+//         max_tokens: 1000
+//     })
+//     console.log(response.data.choices[0].text);
+// }
+
+// start()
+
+
+// let wineLookup = document.querySelector('wineLookup')
+// wineLookup.addEventListener('click', (e) => {
+//     console.log('test');
+// })
+
+
