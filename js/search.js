@@ -194,7 +194,8 @@ input.addEventListener('keypress', (event) => {
         input.placeholder = "Whoops! Enter a dish, ingredient, or cuisine"
     }
 
-})
+}) 
+
 
 // openAI call starts here =====================================
 // require("dotenv").config()
