@@ -17,7 +17,7 @@ async function start() {
     const response = await openai.createCompletion({
         model: "text-davinci-003",
         prompt: "cabernet sauvignon wine",
-        temperature: 0.2,
+        temperature: 0,
         max_tokens: 1000
     })
 
