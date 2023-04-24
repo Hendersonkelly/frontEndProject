@@ -58,7 +58,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    color: #fff3b0;
+    color: #e7c787;
     text-align: center;
     background-color: rgb(51, 92, 103, 0.5);
     overflow-x: hidden;
@@ -78,7 +78,7 @@ body {
 
 #title {
     justify-content: center;
-    color: #fff3b0;
+    color: #e7c787;
     font-size: 50px;
     font-weight: bold;
     width: 60vw;
@@ -376,7 +376,7 @@ a{
 
  #about {
 
-    color: #fff3b0;
+    color: #e7c787;
     font-size: 5vmin;
     position: absolute;
     font-weight: bold;
@@ -417,7 +417,7 @@ a{
     align-items:end;
     justify-content:end;
     background-color: rgb(84, 11, 14, 0.7);
-    color:#fff3b0;
+    color:#e7c787;
     font-weight: bold;
     
     
