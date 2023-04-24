@@ -176,7 +176,8 @@ import { apiKey } from './key.js';
 // console.log(apiKey);
 
 let pairings = document.querySelectorAll('#pairedWines')
-
+let varietal = document.querySelector('.modal-title')
+let description = document.querySelector('.modal-body')
 pairings.forEach(pairing => {
     pairing.addEventListener('click', async (e) => {
         const response = await fetch("https://api.openai.com/v1/completions", {
@@ -197,7 +198,10 @@ pairings.forEach(pairing => {
         // let description = document.querySelector('#wineLookup')
         // description.innerHTML = data.choices[0].text;
         console.log(data.choices[0].text);
+        varietal.textContent = e.target.innerHTML;
+        description.textContent = data.choices[0].text;
     })
+
 })
 
 
