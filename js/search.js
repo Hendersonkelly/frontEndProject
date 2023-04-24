@@ -22,6 +22,7 @@ async function getWine() {
     pairings = data.choices[0].text;
     console.log(pairings);
     let pairingsArr = pairings.split("\n");
+    console.log(pairingsArr);
     console.log(pairingsArr[2]);
     console.log(pairingsArr.length);
     // console.log(pairings);
