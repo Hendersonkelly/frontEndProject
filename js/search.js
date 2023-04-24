@@ -120,22 +120,6 @@ search.addEventListener('click', (e) => {
 
 
 
-// if (input.value.length > 0) {
-//     // getWine(food)
-//     createEl(array)
-//     input.value = ""
-
-// }
-// else {
-//     input.placeholder = "Whoops! Enter a dish, ingredient, or cuisine"
-// }
-
-
-
-
-
-
-
 input.addEventListener('keypress', (event) => {
     clear()
     if (event.key === "Enter" && input.value.length > 0) {
