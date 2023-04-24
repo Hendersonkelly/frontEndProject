@@ -67,7 +67,7 @@ let input = document.querySelector('#input')
 
 // let array = ["merlot", "malbec", "riesling"]
 const getWine = async (food) => {
-    let url = `https://api.spoonacular.com/food/wine/pairing?food=${food}&apiKey=20045f2079b44c89921d3eced6009bc5`
+   
     let result = await fetch(url)
     let data = await result.json()
     console.log(data);
@@ -156,40 +156,61 @@ input.addEventListener('keypress', (event) => {
 })
 
 
-import { apiKey } from './key.js';
+// import { apiKey } from './key.js';
 // console.log(apiKey);
+
+// let pairings = document.querySelectorAll('#pairedWines')
+// let varietal = document.querySelector('.modal-title')
+// let description = document.querySelector('.modal-body')
+// pairings.forEach(pairing => {
+//     pairing.addEventListener('click', async (e) => {
+//         const response = await fetch("https://api.openai.com/v1/completions", {
+//             method: 'POST',
+//             headers: {
+//                 Authorization: `Bearer ${apiKey}`,
+//                 "Content-Type": 'application/json'
+//             },
+//             body: JSON.stringify({
+//                 model: "text-davinci-003",
+//                 prompt: `describe ${e.target.innerHTML}`,
+//                 temperature: 0,
+//                 max_tokens: 300
+//             })
+//         })
+//         const data = await response.json()
+//         console.log(data);
+//         // let description = document.querySelector('#wineLookup')
+//         // description.innerHTML = data.choices[0].text;
+//         console.log(data.choices[0].text);
+//         varietal.textContent = e.target.innerHTML;
+//         description.textContent = data.choices[0].text;
+//     })
+
+// })
+
+
+
+
+
+
 
 let pairings = document.querySelectorAll('#pairedWines')
 let varietal = document.querySelector('.modal-title')
 let description = document.querySelector('.modal-body')
 pairings.forEach(pairing => {
     pairing.addEventListener('click', async (e) => {
-        const response = await fetch("https://api.openai.com/v1/completions", {
-            method: 'POST',
-            headers: {
-                Authorization: `Bearer ${apiKey}`,
-                "Content-Type": 'application/json'
-            },
-            body: JSON.stringify({
-                model: "text-davinci-003",
-                prompt: `describe ${e.target.innerHTML}`,
-                temperature: 0,
-                max_tokens: 300
-            })
+        const response = await fetch(`https://api.spoonacular.com/food/wine/description?wine=${e.target.innerHTML}&apiKey=20045f2079b44c89921d3eced6009bc5`, {
+        
         })
         const data = await response.json()
         console.log(data);
         // let description = document.querySelector('#wineLookup')
         // description.innerHTML = data.choices[0].text;
-        console.log(data.choices[0].text);
+        console.log(data);
         varietal.textContent = e.target.innerHTML;
-        description.textContent = data.choices[0].text;
+        description.textContent = data;
     })
 
 })
-
-
-
-
 
 
