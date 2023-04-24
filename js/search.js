@@ -62,30 +62,32 @@ input.addEventListener('keypress', (event) => {
 
 let search = document.querySelector('#search')
 
+
 let input = document.querySelector('#input')
 
-let array = ["merlot", "malbec", "riesling"]
+
+// let array = ["merlot", "malbec", "riesling"]
 const getWine = async (food) => {
     let url = `https://api.spoonacular.com/food/wine/pairing?food=${food}&apiKey=20045f2079b44c89921d3eced6009bc5`
     let result = await fetch(url)
     let data = await result.json()
     console.log(data);
+    const createEl = (array) => {
 
-
-}
-
-const createEl = (array) => {
-
-    let pairedWines = document.querySelector('#pairedWines')
-
-    for (i = 0; i < array.length; i++) {
-        let wineResult = document.createElement('ul')
-        wineResult.innerHTML = array[i]
-        wineResult.setAttribute('id', 'ul')
-        pairedWines.append(wineResult)
+        let pairedWines = document.querySelector('#pairedWines')
+    
+        for (let i = 0; i < array.length; i++) {
+            let wineResult = document.createElement('ul')
+            wineResult.innerHTML = array[i]
+            wineResult.setAttribute('id', 'ul')
+            pairedWines.append(wineResult)
+        }
+    
     }
+    createEl(data.pairedWines)
 
 }
+
 
 const clear = () => {
     let pairedWines = document.querySelector('#pairedWines')
@@ -103,6 +105,23 @@ search.addEventListener('click', (e) => {
     console.log(food);
 
     if (input.value.length > 0) {
+        getWine(food)
+        
+        input.value = ""
+
+    }
+    else {
+        input.placeholder = "Whoops! Enter a dish, ingredient, or cuisine"
+    }
+
+
+
+
+})
+
+
+
+    if (input.value.length > 0) {
         // getWine(food)
         createEl(array)
         input.value = ""
@@ -111,6 +130,7 @@ search.addEventListener('click', (e) => {
     else {
         input.placeholder = "Whoops! Enter a dish, ingredient, or cuisine"
     }
+
 
 
 
@@ -158,5 +178,3 @@ async function fetchData() {
 }
 
 fetchData()
-
-// test
