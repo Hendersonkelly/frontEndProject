@@ -442,3 +442,20 @@ a {
 .navbar-nav {
     color: #540b0e;
 }
+
+/* styling footer */
+
+.footer-bg {
+    background-color:#3f0709; 
+    color: #fff3b0;
+ }
+ .about-color{
+    color: #fff3b0;
+    font-size: 140%;
+ }
+ .whtcol-col{
+    color:#fff3b0;
+    font-size: 105%;
+ }
+
+  /* styling footer */
