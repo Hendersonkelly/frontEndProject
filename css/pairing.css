@@ -11,6 +11,7 @@ body {
   background-image: url("https://images.unsplash.com/photo-1586636539865-52064fb82ba3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=688&q=80");
  background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
   
   
   
@@ -41,7 +42,7 @@ body {
     text-align:center;
     min-height: 25vh;
     font-family: 'Josefin Sans', sans-serif;
-    margin: 8%;
+    margin:2%;
     padding: 0px;
     font-size: 30px;
   
@@ -97,16 +98,19 @@ button {
 
 #cover {
   position: absolute;
-  top: 37%;
+  top: 31%;
   left: 0;
   right: 0;
   width: 60%;
-  padding: 25px;
+  padding: 20px;
   margin: 4% auto 0 auto;
   background-color: #540b0e;
   border-radius: 20px;
   box-shadow: 0 10px 40px #540b0e, 0 0 0 20px#fff3b0;
   transform: scale(0.5);
+  display: flex;
+  flex: 1;
+
 }
 
 
@@ -214,7 +218,7 @@ button span:after {
 } */
 
 ul {
-  text-align: center;
+  text-align:justify;
   color:black;
   list-style-type: none;
 }
@@ -225,7 +229,8 @@ ul {
   justify-items: center;
   display: inline-flexbox;
   font-size: 25px;
-margin: 10%;
+  margin: 14%;
+
  
   font-weight: bold;
 }
