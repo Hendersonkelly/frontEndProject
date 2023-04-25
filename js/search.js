@@ -56,18 +56,18 @@ const clear = () => {
 
 search.addEventListener('click', (e) => {
     clear()
-    foodInput.textContent = `Wine pairings for ${input.value}:`
     let food = input.value
     console.log(food);
     
     if (input.value.length > 0) {
+        foodInput.textContent = `Wine pairings for ${input.value}:`
         getWine(food)
 
         input.value = ""
 
     }
     else {
-        input.placeholder = "Whoops! Enter a dish, ingredient, or cuisine"
+        input.placeholder = "Whoops! Enter a food"
     }
    
 })
@@ -90,7 +90,7 @@ input.addEventListener('keypress', (event) => {
     }
 
     else if (event.key === 'Enter' && input.value.length <= 0) {
-        input.placeholder = "Whoops! Enter a dish, ingredient, or cuisine"
+        input.placeholder = "Whoops! Enter a food"
     }
 
 })

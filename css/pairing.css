@@ -106,7 +106,7 @@ button {
   background-color: #540b0e;
   border-radius: 20px;
   box-shadow: 0 10px 40px #540b0e, 0 0 0 20px#fff3b0;
-  transform: scale(0.6);
+  transform: scale(0.5);
 }
 
 
@@ -120,6 +120,7 @@ input[type="text"] {
 
 input[type="text"]::placeholder {
   color: #e7c787;
+  font-size: 36px;
 }
 
 #s-cover {
@@ -136,7 +137,7 @@ button {
   cursor: pointer;
 }
 
-#s-circle {
+/* #s-circle {
   position: relative;
   top: -8px;
   left: 0;
@@ -164,8 +165,7 @@ button span {
   transition: 0.5s ease all;
   z-index: -1;
 }
-
-button span:before,
+ button span:before,
 button span:after {
   content: "";
   position: absolute;
@@ -177,7 +177,7 @@ button span:after {
   border-radius: 10px;
   transform: rotateZ(0);
   transition: 0.5s ease all;
-}
+} 
 
 #s-cover:hover #s-circle {
   top: -1px;
@@ -199,9 +199,9 @@ button span:after {
 #s-cover:hover button span:before {
   bottom: 11px;
   transform: rotateZ(52deg);
-}
+} 
 
-#s-cover:hover button span:after {
+ #s-cover:hover button span:after {
   bottom: -11px;
   transform: rotateZ(-52deg);
 }
@@ -211,7 +211,7 @@ button span:after {
   right: -6px;
   width: 40px;
   background-color: #e7c787;
-}
+} */
 
 ul {
   text-align: center;
