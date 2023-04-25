@@ -27,9 +27,11 @@ async function getWine() {
     console.log(pairingsArr.length);
     // console.log(pairings);
 
-
+    
     let pairedWines = document.querySelector('#pairedWines')
     let wineResultList = document.createElement('ul')
+    let foodInput = document.querySelector(`#foodInput`)
+ 
     pairedWines.append(wineResultList)
     for (let i = 2; i < 5; i++) {
         let wineResult = document.createElement('li')
@@ -37,33 +39,12 @@ async function getWine() {
         console.log(wineResult);
         wineResultList.appendChild(wineResult)
     }
-    // for (let i = 2; i < pairings.length; i++) {
-    //     console.log(pairings);
-    //     let wineResult = document.createElement('ul')
-    //     wineResult.setAttribute('id', 'ul')
-    //     wineResult.textContent = pairings[i];
-    //     console.log(wineResult);
-    //     pairedWines.append(wineResult)
-    // }
-
-    // const createEl = (array) => {
-    //     let pairedWines = document.querySelector('#pairedWines')
-    //     console.log(data.choices[0].text);
-    //     for (let i = 0; i < pairings.length; i++) {
-    //         console.log(pairings);
-    //         let wineResult = document.createElement('ul')
-    //         wineResult.setAttribute('id', 'ul')
-    //         wineResult.textContent = pairings[i];
-    //         console.log(wineResult);
-    //         pairedWines.append(wineResult)
-    //     }
-    //     createEl(pairedWines)
-    //     console.log(pairedWines);
-    // }
+    
 
 }
 
 const clear = () => {
+
     let pairedWines = document.querySelector('#pairedWines')
     let wineList = document.querySelectorAll('#ul')
     while (pairedWines.firstChild) {
@@ -77,33 +58,39 @@ search.addEventListener('click', (e) => {
     clear()
     let food = input.value
     console.log(food);
-
+    
     if (input.value.length > 0) {
+        foodInput.textContent = `Wine pairings for ${input.value}:`
         getWine(food)
 
         input.value = ""
 
     }
     else {
-        input.placeholder = "Whoops! Enter a dish, ingredient, or cuisine"
+        input.placeholder = "Whoops! Enter a food"
     }
-
+   
 })
 
 
 input.addEventListener('keypress', (event) => {
     clear()
     let food = input.value
+    
     if (event.key === "Enter" && input.value.length > 0) {
         event.preventDefault
-
+        foodInput.textContent = `Wine pairings for ${input.value}:`
         getWine(food)
-
+        
+        
+        
+        
+        
         input.value = ""
     }
 
     else if (event.key === 'Enter' && input.value.length <= 0) {
-        input.placeholder = "Whoops! Enter a dish, ingredient, or cuisine"
+        input.placeholder = "Whoops! Enter a food"
     }
 
 })
@@ -142,22 +129,22 @@ pairedWines.forEach(pairedWines => {
         
         })
         const data2 = await response2.json()
+        console.log(data2);
+        recommendation1.innerHTML = "<br>"+"<br>"+"<b>Recommendation:</b>"+`${data2.recommendedWines[0].title} `+ "<br>" + "<b>Description:</b>"+
+        `${data2.recommendedWines[0].description}` + "<br>" +
+        "<b>Price:</b>" +`${data2.recommendedWines[0].price} `+ "<br>" + "<br>"
+        let recommendation1Img = document.createElement('img')
+        recommendation1Img.src= data2.recommendedWines[0].imageUrl
+        recommendation1.append(recommendation1Img)
+
+        recommendation2.innerHTML = "<br>"+"<br>"+"<b>Recommendation:</b>"+`${data2.recommendedWines[1].title} ` +"<br>" + "<b>Description:</b>"+ 
+        `${data2.recommendedWines[1].description}` + "<br>" +
+        "<b>Price:</b>" +`${data2.recommendedWines[1].price} `+ "<br>" + "<br>"
+        let recommendation2Img = document.createElement('img')
+        recommendation2Img.src= data2.recommendedWines[1].imageUrl
+        recommendation2.append(recommendation2Img)
         
-        recommendation1.textContent = `Recommendation: ${data2.recommendedWines[0].title} 
-        Description: ${data2.recommendedWines[0].description} 
-        Price: ${data2.recommendedWines[0].price} ` 
-        recommendation2.textContent = `Recommendation: ${data2.recommendedWines[1].title} 
-        Description: ${data2.recommendedWines[1].description} 
-        Price: ${data2.recommendedWines[1].price}`
-        
-        
-       
 
-
-
-
-
-        // recommendation2.textContent = data2.recommendedWines[1]
 
 
 

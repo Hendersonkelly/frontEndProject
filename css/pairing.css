@@ -8,10 +8,13 @@
 
 body {
 
-  background-image: url("https://images.unsplash.com/photo-1568213816046-0ee1c42bd559?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80");
-  background-size: cover;
+  background-image: url("https://images.unsplash.com/photo-1586636539865-52064fb82ba3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=688&q=80");
+ background-size: cover;
   background-repeat: no-repeat;
-  background-size: auto cover;
+  
+  
+  
+  
 
 
 
@@ -49,11 +52,14 @@ body {
 
 .modal-body {
   background-color: #335c67;
+  font-size:18px;
 
 }
 
 .modal-header {
   background-color: #335c67;
+  font-size: 20px;
+  font-weight: bold;
 
 
 }
@@ -100,7 +106,7 @@ button {
   background-color: #540b0e;
   border-radius: 20px;
   box-shadow: 0 10px 40px #540b0e, 0 0 0 20px#fff3b0;
-  transform: scale(0.6);
+  transform: scale(0.5);
 }
 
 
@@ -114,6 +120,7 @@ input[type="text"] {
 
 input[type="text"]::placeholder {
   color: #e7c787;
+  font-size: 36px;
 }
 
 #s-cover {
@@ -130,7 +137,7 @@ button {
   cursor: pointer;
 }
 
-#s-circle {
+/* #s-circle {
   position: relative;
   top: -8px;
   left: 0;
@@ -158,8 +165,7 @@ button span {
   transition: 0.5s ease all;
   z-index: -1;
 }
-
-button span:before,
+ button span:before,
 button span:after {
   content: "";
   position: absolute;
@@ -171,7 +177,7 @@ button span:after {
   border-radius: 10px;
   transform: rotateZ(0);
   transition: 0.5s ease all;
-}
+} 
 
 #s-cover:hover #s-circle {
   top: -1px;
@@ -193,9 +199,9 @@ button span:after {
 #s-cover:hover button span:before {
   bottom: 11px;
   transform: rotateZ(52deg);
-}
+} 
 
-#s-cover:hover button span:after {
+ #s-cover:hover button span:after {
   bottom: -11px;
   transform: rotateZ(-52deg);
 }
@@ -205,21 +211,41 @@ button span:after {
   right: -6px;
   width: 40px;
   background-color: #e7c787;
-}
+} */
 
 ul {
   text-align: center;
-  color: #335c67;
+  color:black;
   list-style-type: none;
 }
 
+#results{
+  text-align: center;
+  align-items: center;
+  justify-items: center;
+  display: inline-flexbox;
+  font-size: 25px;
+margin: 10%;
+ 
+  font-weight: bold;
+}
+
 #pairedWines {
-  width: 55%;
+width: fit-content;
   height: 50%;
-  background-color: transparent;
+ 
   text-align: center;
   font-size: 25px;
-  left: 20%;
+ 
+  font-weight: bold;
 
+
+}
+
+#recommendation1{
+  font-size: 18px;
+}
+#recommendation2{
+  font-size: 18px;
 }
 
