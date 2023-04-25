@@ -218,7 +218,7 @@ button span:after {
 } */
 
 ul {
-  text-align: center;
+  text-align:justify;
   color:black;
   list-style-type: none;
 }
