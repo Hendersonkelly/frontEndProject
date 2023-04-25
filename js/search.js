@@ -145,14 +145,10 @@ pairedWines.forEach(pairedWines => {
         
         recommendation1.textContent = `Recommendation: ${data2.recommendedWines[0].title} 
         Description: ${data2.recommendedWines[0].description} 
-        Price: ${data2.recommendedWines[0].price}
-
-
-        ` 
+        Price: ${data2.recommendedWines[0].price} ` 
         recommendation2.textContent = `Recommendation: ${data2.recommendedWines[1].title} 
         Description: ${data2.recommendedWines[1].description} 
-        Price: ${data2.recommendedWines[1].price}
-        `
+        Price: ${data2.recommendedWines[1].price}`
         
         
        
