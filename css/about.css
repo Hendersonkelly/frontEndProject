@@ -1,29 +1,28 @@
-
-
-*{
+* {
     box-sizing: border-box;
     border: none;
     outline: none;
     padding: 0;
     margin: 0;
 }
+
 body {
     background-image: url("https://i0.wp.com/foodwineexperience.com/wp-content/uploads/2019/11/FoodandWineExperience_webbackground.jpg?ssl=1");
-    background-size:cover;
-    background-repeat:no-repeat;
+    background-size: cover;
+    background-repeat: no-repeat;
     width: 100vw;
     height: 100vh;
     font-family: 'Josefin Sans', sans-serif;
-   
+
 }
 
 
 
 
- .btn-color {
+.btn-color {
     color: #540b0e;
     margin: 30px;
-} 
+}
 
 #pairMeButton {
     text-decoration: none;
@@ -48,7 +47,7 @@ body {
 
 #pairMeButton {
     border-radius: 8%
-} 
+}
 
 .burgundy-bgc {
     background-color: #540b0e;
@@ -113,71 +112,79 @@ body {
     font-size: 20px;
     color: white;
 } */
-a{
+a {
     color: #540b0e;
-    
+
 }
+
 a:link {
     text-decoration: none;
-    color:#540b0e;
+    color: #540b0e;
     font-family: 'Josefin Sans', sans-serif;
     font-size: 150%;
 
 }
-a:hover{
-    color:#540b0e ; 
+
+a:hover {
+    color: #540b0e;
 }
-header{
+
+header {
     width: 100vw;
     height: 100px;
-    background-color: white ;
-    box-shadow: 0px 3px 8px  rgba(0, 0 , 0, 25%);
+    background-color: white;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 25%);
     padding: 20px;
-    
 
-   
-    
+
+
+
 }
-header .container-fluid{
+
+header .container-fluid {
     width: 100%;
     padding: 0 60px;
     align-items: center;
     justify-content: space-between;
-    background-color: white ;
+    background-color: white;
 
 }
-header .Navbar-logo img{
+
+header .Navbar-logo img {
     width: 140px;
-    height:70px;
-   
+    height: 70px;
+
 }
-header .Navbar-items{
-    display:flex;
+
+header .Navbar-items {
+    display: flex;
     align-items: center;
     justify-content: flex-end;
-   
-}
-header .items{
- text-align: center;
- margin-inline: 15%;
- font-size: 20px;
- letter-spacing: 3px;
- color:#722F37;
- padding:5px 0;
- transition: all .1s ease;
- border-bottom: 0px solid #335c67;
- border-top: 0px solid #335c67;
- cursor:pointer;
 
 }
-header .items:hover{
-    border-bottom: 3px solid  #64d6f4;
+
+header .items {
+    text-align: center;
+    margin-inline: 15%;
+    font-size: 20px;
+    letter-spacing: 3px;
+    color: #722F37;
+    padding: 5px 0;
+    transition: all .1s ease;
+    border-bottom: 0px solid #335c67;
+    border-top: 0px solid #335c67;
+    cursor: pointer;
+
+}
+
+header .items:hover {
+    border-bottom: 3px solid #64d6f4;
     border-top: 3px solid #64d6f4;
 }
 
 /* ------------------------------- */
 
-header .item-button a{
+header .item-button a {
 
     background-color: #540b0e;
     width: 150px;
@@ -191,34 +198,34 @@ header .item-button a{
     transition: all .5s ease;
 }
 
-header .item-button a:hover{
+header .item-button a:hover {
 
     background-color: #540b0e;
 }
 
-header .mobile-toggler{
+header .mobile-toggler {
 
     font-size: 30px;
-    
+
 }
 
 /* modal */
 
-.modal-dialog{
+.modal-dialog {
 
     margin: 0;
     width: 430px;
 }
 
-@media(max-width: 450px){
+@media(max-width: 450px) {
 
-    .modal-dialog{
+    .modal-dialog {
 
         width: 82%;
     }
 }
 
-.modal-content{
+.modal-content {
 
     border-radius: 0;
     height: 100vh;
@@ -226,7 +233,7 @@ header .mobile-toggler{
     background-color: #540b0e;
 }
 
-.modal-header{
+.modal-header {
 
     display: flex;
     justify-content: space-between;
@@ -237,26 +244,26 @@ header .mobile-toggler{
     border-bottom: 2px solid #fefefe;
 }
 
-.modal-header img{
+.modal-header img {
 
     width: 140px;
     height: 66px;
     margin-top: 17.5px;
 }
 
-.modal-header .btn-close{
+.modal-header .btn-close {
 
     background: transparent;
     opacity: 1;
 }
 
-.modal-header i{
+.modal-header i {
 
     color: #fefefe;
     font-size: 30px;
 }
 
-.modal-body{
+.modal-body {
 
     width: 88%;
     margin: 0 auto;
@@ -264,7 +271,7 @@ header .mobile-toggler{
     flex: unset;
 }
 
-.modal-body .modal-line{
+.modal-body .modal-line {
 
     width: 100%;
     display: flex;
@@ -278,13 +285,13 @@ header .mobile-toggler{
     border-bottom: 1px solid #540b0e;
 }
 
-.modal-body .modal-line:hover{
+.modal-body .modal-line:hover {
 
     color: #fefefe;
     border-bottom: 1px solid #fefefe;
 }
 
-.modal-line a{
+.modal-line a {
 
     font-size: 17px;
     font-weight: 600;
@@ -292,17 +299,17 @@ header .mobile-toggler{
     color: #500303;
 }
 
-.modal-line i{
+.modal-line i {
 
     color: #540b0e;
     font-size: 30px;
     width: 35px;
     margin-right: 15px;
     padding: 0 0 3px 3px;
-    
+
 }
 
-.navb-button{
+.navb-button {
 
     width: 100%;
     height: 47px;
@@ -317,13 +324,13 @@ header .mobile-toggler{
     transition: all .5s ease;
 }
 
-.navb-button:hover{
+.navb-button:hover {
 
     background-color: #540b0e;
     color: #fefefe;
 }
 
-.mobile-modal-footer{
+.mobile-modal-footer {
 
     width: 87%;
     margin: 0 auto;
@@ -335,14 +342,14 @@ header .mobile-toggler{
     color: #540b0e;
 }
 
-.mobile-modal-footer i:hover{
+.mobile-modal-footer i:hover {
 
     color: #fefefe;
 }
 
 
 
-.section-1{
+.section-1 {
 
     width: 100vw;
     height: 95vh;
@@ -351,7 +358,7 @@ header .mobile-toggler{
     align-items: center;
 }
 
-.section-1 p{
+.section-1 p {
 
     font-size: 75px;
     font-weight: 700;
@@ -360,9 +367,9 @@ header .mobile-toggler{
     text-align: center;
 }
 
-@media(max-width:767px){
+@media(max-width:767px) {
 
-    .section-1 p{
+    .section-1 p {
 
         font-size: 50px;
         text-align: start;
@@ -370,58 +377,67 @@ header .mobile-toggler{
         margin: auto;
     }
 }
-a{
+
+a {
     color: #335c67;
 }
 
- #about {
+#about {
 
     color: #e7c787;
     font-size: 5vmin;
     position: absolute;
     font-weight: bold;
     background-color: rgb(84, 11, 14, 0.9);
-    padding: 10px;   
-  
-} 
+    padding: 10px;
 
-#aboutContainer{
+}
+
+#aboutContainer {
     display: flex;
 
-   align-items: center;
-   text-align: center;
-   justify-content: center;
-   height:300px;
-   position: relative;
-   
-    
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    height: 300px;
+    position: relative;
+
+
 
 }
 
-#bios{
+#bios {
     font-size: 20px;
-    align-items:end;
-    justify-content:end;
+    align-items: end;
+    justify-content: end;
     text-align: start;
-    
-    
-  
+
+
+
 }
-#bioContainer{
+
+#bioContainer {
     padding-top: 2%;
     padding-bottom: 2%;
     padding-left: 1%;
     padding-right: 1%;
     margin: auto;
     width: 85vmin;
-    align-items:end;
-    justify-content:end;
+    align-items: end;
+    justify-content: end;
     background-color: rgb(84, 11, 14, 0.7);
-    color:#e7c787;
+    color: #e7c787;
     font-weight: bold;
-    
-    
 
 
-}  
 
+
+}
+
+#logo {
+    height: 60px;
+}
+
+.navbar-nav {
+    color: #540b0e;
+}
