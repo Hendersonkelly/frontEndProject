@@ -117,21 +117,50 @@ input.addEventListener('keypress', (event) => {
 
 
 
-let pairings = document.querySelectorAll('#pairedWines')
+let pairedWines = document.querySelectorAll('#pairedWines')
 let varietal = document.querySelector('.modal-title')
-let description = document.querySelector('.modal-body')
-pairings.forEach(pairing => {
-    pairing.addEventListener('click', async (e) => {
-        const response = await fetch(`https://api.spoonacular.com/food/wine/description?wine=${e.target.innerHTML}&apiKey=20045f2079b44c89921d3eced6009bc5`, {
+let content = document.querySelector('#modal-body')
+let recommendation1 = document.querySelector('#recommendation1')
+let recommendation2 = document.querySelector('#recommendation2')
+pairedWines.forEach(pairedWines => {
+    pairedWines.addEventListener('click', async (e) => {
+        console.log(e.target.innerHTML);
+        let string = e.target.innerHTML
+        let description = ""
+        for (let i=1; i< string.length; i++){
+            description += string[i]        }
+            console.log(description);
+        const response = await fetch(`https://api.spoonacular.com/food/wine/description?wine=${description}&apiKey=20045f2079b44c89921d3eced6009bc5`, {
         
         })
         const data = await response.json()
-        console.log(data);
-        // let description = document.querySelector('#wineLookup')
-        // description.innerHTML = data.choices[0].text;
-        console.log(data);
-        varietal.textContent = e.target.innerHTML;
-        description.textContent = data;
+        
+        varietal.textContent = description;
+      
+        content.textContent = data.wineDescription;
+        const response2 = await fetch(`https://api.spoonacular.com/food/wine/recommendation?wine=${description} &number=2&apiKey=20045f2079b44c89921d3eced6009bc5`, {
+        
+        })
+        const data2 = await response2.json()
+        
+        recommendation1.textContent = `Recommendation: ${data2.recommendedWines[0].title} 
+        Description: ${data2.recommendedWines[0].description} 
+        Price: ${data2.recommendedWines[0].price} ` 
+        recommendation2.textContent = `Recommendation: ${data2.recommendedWines[1].title} 
+        Description: ${data2.recommendedWines[1].description} 
+        Price: ${data2.recommendedWines[1].price}`
+        
+        
+       
+
+
+
+
+
+        // recommendation2.textContent = data2.recommendedWines[1]
+
+
+
     })
 
 })
