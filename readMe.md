@@ -10,6 +10,7 @@ Our class was assigned the task of coming up with an app that would make use of 
 - CSS
 - Bootstrap
 - HTML
+- Fontawesome
 
 ## Usage:
 Type any food, ingredient, cuisine, etc into our searchbar:
