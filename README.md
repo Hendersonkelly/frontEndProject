@@ -20,7 +20,9 @@ And you will receive three suggested pairings:
 
 ![image](https://user-images.githubusercontent.com/127783825/234334501-bb4dd89e-9b72-4df6-a0cf-5bc452c3c5f0.png)
 
-You can click on one of the suggested wines to get more details such as a description and a link to a specific bottle that can be purchased online.
+You can click on one of the suggested wines to get more details such as a description and a link to a specific bottle that can be purchased online:
+
+![image](https://user-images.githubusercontent.com/127783825/235173089-5f3b4023-52bb-4427-8c29-4dc3aa6e92b4.png)
 
 # Authors:
 - Kelly Henderson:  https://github.com/Hendersonkelly
