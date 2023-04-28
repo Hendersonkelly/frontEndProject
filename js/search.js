@@ -4,14 +4,14 @@ import { apiKey } from './key.js';
 let search = document.querySelector('#search')
 let input = document.querySelector('#input')
 var pairings = []
-async function getWine() {
+async function getWine() {  
     const response = await fetch('https://api.openai.com/v1/completions', {
-        method: 'POST',
+        method: 'POST', // changes default behavior from get to post
         headers: {
             Authorization: `Bearer ${apiKey}`,
             "Content-Type": 'application/json'
         },
-        body: JSON.stringify({
+        body: JSON.stringify({ // converts js object to json text
             model: 'text-davinci-003',
             prompt: `suggest three wine pairings in an un-numbered list ${input.value} without descriptions`,
             temperature: 0,
@@ -78,7 +78,7 @@ input.addEventListener('keypress', (event) => {
     let food = input.value
     
     if (event.key === "Enter" && input.value.length > 0) {
-        event.preventDefault
+        event.preventDefault()
         foodInput.textContent = `Wine pairings for ${input.value}:`
         getWine(food)
         
