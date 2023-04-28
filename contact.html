@@ -7,6 +7,8 @@
     <title>Pocket Somm</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/contact.css">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
         integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
@@ -28,112 +30,113 @@
     <div class="container-fluid m-0 p-0 position-relative">
         <main>
             <header>
-            <div class="container-fluid">
-                <div class="Navbar-logo">
-                    <img src="image/Capture.PNG" alt="logo"> 
-
-                </div>
-                <div class="Navbar-items d-none d-xl-flex">
-                    <div class="items">
-                        <a href="index.html" style="color:#540b0e" >Home</a>
+                <div class="container-fluid">
+                    <div class="Navbar-logo">
+                        <img src="image/Capture.PNG" alt="logo">
 
                     </div>
-                    <div class="items">
-                        <a href="about.html" style="color:#540b0e" >About</a>
+                    <div class="Navbar-items d-none d-xl-flex">
+                        <div class="items">
+                            <a href="index.html" style="color:#540b0e">Home</a>
+
+                        </div>
+                        <div class="items">
+                            <a href="about.html" style="color:#540b0e">About</a>
+
+                        </div>
+                        <div class="items">
+                            <a href="pairing.html" style="color:#540b0e">Search</a>
+
+                        </div>
+                        <div class="items">
+                            <a href="contact.html" type="button" style="color:#540b0e">Contact</a>
+
+                        </div>
+
 
                     </div>
-                    <div class="items">
-                        <a href="pairing.html" style="color:#540b0e">Search</a>
 
+                    <div class="mobile-toggler d-lg-none">
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#NavbarModal">
+                            <i class="fa-solid fa-bars"></i>
+                        </a>
                     </div>
-                    <div class="items">
-                        <a href="contact.html" type="button" style="color:#540b0e">Contact</a>
+                    <!-- Modal -->
 
+                    <div class="modal fade" id="NavbarModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+
+                                <div class="modal-header">
+                                    <img src="image/Capture.PNG" alt="Logo">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+                                </div>
+
+                                <div class="modal-body">
+
+                                    <div class="modal-line">
+                                        <i class="fa-solid fa-house"></i><a href="index.html">Home</a>
+                                    </div>
+
+
+
+                                    <div class="modal-line">
+                                        <i class="fa-solid fa-file-lines"></i> <a href="pairing.html">Search</a>
+                                    </div>
+
+                                    <div class="modal-line">
+                                        <i class="fa-solid fa-circle-info"></i><a href="about.html">About</a>
+                                    </div>
+
+                                    <a href="contact.html" class="navb-button" type="button">Contact</a>
+                                </div>
+
+                            </div>
+                            <div class="mobile-modal-footer">
+
+                                <a target="_blank" href="#"><i class="fa-brands fa-instagram"></i></a>
+                                <a target="_blank" href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                                <a target="_blank" href="#"><i class="fa-brands fa-youtube"></i></a>
+                                <a target="_blank" href="#"><i class="fa-brands fa-facebook"></i></a>
+                            </div>
+                        </div>
+
+
+            </header>
+            <!--End of nav bar from above--------  -->
+
+            <!-- conatct form-->
+
+            <div class="contactform">
+
+
+
+
+                <form>
+                    <div class="row">
+                        <div class="input-group">
+                            <input type="text" id="name" required>
+                            <label for="name"> <i class="fas fa-user"></i> Your Name</label>
+                        </div>
+                        <div class="input-group">
+                            <input type="text" id="number" required>
+                            <label for="number"> <i class="fas fa-phone-alt"></i> Phone no.</label>
+                        </div>
                     </div>
-                   
-                    
-                </div>
-                
-                <div class="mobile-toggler d-lg-none">
-                    <a href="#" data-bs-toggle="modal" data-bs-target="#NavbarModal">
-                        <i class="fa-solid fa-bars"></i>
-                    </a>
-                </div>
-  <!-- Modal -->
 
-  <div class="modal fade" id="NavbarModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-  aria-hidden="true">
-  <div class="modal-dialog">
-      <div class="modal-content">
-
-          <div class="modal-header">
-              <img src="image/Capture.PNG" alt="Logo">
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
-          </div>
-
-          <div class="modal-body">
-              
-              <div class="modal-line">
-                  <i class="fa-solid fa-house"></i><a href="index.html">Home</a>
-              </div>
-
-              
-
-              <div class="modal-line">
-                  <i class="fa-solid fa-file-lines"></i> <a href="pairing.html">Search</a>
-              </div>
-
-              <div class="modal-line">
-                  <i class="fa-solid fa-circle-info"></i><a href="about.html">About</a>
-              </div>
-
-              <a href="contact.html" class="navb-button" type="button">Contact</a>
+                    <div class="input-group">
+                        <input type="text" id="email" required>
+                        <label for="email"><i class="fas fa-envelope"></i> Email Id</label>
+                    </div>
+                    <div class="input-group">
+                        <textarea id="message" rows="8" required></textarea>
+                        <label for="message"><i class="fas fa-comments"></i> Your Message</label>
+                    </div>
+                    <button type="submit"><i class="fas fa-paper-plane"></i> SUBMIT</button>
+                </form>
             </div>
-
-  </div>
-            <div class="mobile-modal-footer">
-                                        
-            <a target="_blank" href="#"><i class="fa-brands fa-instagram"></i></a>
-            <a target="_blank" href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-            <a target="_blank" href="#"><i class="fa-brands fa-youtube"></i></a>
-            <a target="_blank" href="#"><i class="fa-brands fa-facebook"></i></a>
-            </div>
-    </div>
-           
-          
-        </header>
-         <!--End of nav bar from above--------  --> 
-
-        <!-- conatct form-->
-
-        <div class="contactform">
-            
-
-        
-
-     <form>
-        <div class="row">
-            <div class="input-group">
-                <input type="text"  id="name" required>
-                <label for="name"> <i class="fas fa-user"></i>  Your Name</label>
-            </div>
-            <div class="input-group">
-                <input type="text"  id="number" required>
-                <label for="number">   <i class="fas fa-phone-alt"></i>  Phone no.</label>
-            </div>
-        </div>
-       
-        <div class="input-group">
-            <input type="text"  id="email" required>
-            <label for="email"><i class="fas fa-envelope"></i> Email Id</label>
-        </div>
-        <div class="input-group">
-           <textarea  id="message" rows="8" required></textarea>
-            <label for="message"><i class="fas fa-comments"></i> Your Message</label>
-        </div>
-        <button type="submit"><i class="fas fa-paper-plane"></i> SUBMIT</button>
-    </form>
-         </div>
 
         </main>
     </div>
@@ -144,39 +147,47 @@
                 <div class="about-color col-md-4 col-lg-4 col-xl-4 mx-auto mt-4">
                     <h5 class="text-uppercase mb-4 font-weight-bold text-info">About Us</h5>
                     <hr class="mb-4">
-                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore dolor dolores deleniti eos deserunt quae officia quidem explicabo distinctio dicta repellat optio beatae vero cum ipsa molestiae, ea cupiditate laborum.</p>
+
+
+                    <p> Pocket Somm is the brainchild of three web dev bootcamp students, who found a common ground in their
+                        love for wine and food.
+                        The name comes from the idea of having a sommelier (wine expert) on hand to help with selecting a wine
+                        to go with a specific food.
+                        We used openAI to get the wine pairings, and Spoonacular to get the wine descriptions.</p>
+
+
                 </div>
 
                 <div class="whtcol-col col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
                     <h5 class="whtcol-col text-uppercase mb-4 font-weight-bold text-info">Let us help</h5>
                     <hr class="mb-4">
                     <p>
-                        <a href="#" class="whtcol-col" style="text-decoration:none" >Your account</a>
+                        <a href="#" class="whtcol-col" style="text-decoration:none">Your account</a>
                     </p>
                     <p>
-                        <a href="#" class="whtcol-col" style="text-decoration:none" >Your account</a>
+                        <a href="#" class="whtcol-col" style="text-decoration:none">Your account</a>
                     </p>
                     <p>
-                        <a href="#" class="whtcol-col" style="text-decoration:none" >Manage </a>
+                        <a href="#" class="whtcol-col" style="text-decoration:none">Manage </a>
                     </p>
                     <p>
-                        <a href="#" class="whtcol-col" style="text-decoration:none" >Help</a>
+                        <a href="#" class="whtcol-col" style="text-decoration:none">Help</a>
                     </p>
                 </div>
                 <div class=" whtcol-col col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
                     <h5 class=" text-uppercase mb-4 font-weight-bold text-info">memebership</h5>
                     <hr class="mb-4">
                     <p>
-                        <a href="#" class="whtcol-col" style="text-decoration:none" >Your account</a>
+                        <a href="#" class="whtcol-col" style="text-decoration:none">Your account</a>
                     </p>
                     <p>
-                        <a href="#" class="whtcol-col" style="text-decoration:none" >Your account</a>
+                        <a href="#" class="whtcol-col" style="text-decoration:none">Your account</a>
                     </p>
                     <p>
-                        <a href="#" class="whtcol-col" style="text-decoration:none" >Manage </a>
+                        <a href="#" class="whtcol-col" style="text-decoration:none">Manage </a>
                     </p>
                     <p>
-                        <a href="#" class="whtcol-col" style="text-decoration:none" >Help</a>
+                        <a href="#" class="whtcol-col" style="text-decoration:none">Help</a>
                     </p>
                 </div>
                 <div class=" whtcol-col col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
@@ -201,7 +212,11 @@
                         <p>
                             copyright 2020 All Right Reserved By :
                             <a href="#" style="text-decoration:none;">
-                            <strong class="text-info"> Whinnos</strong>
+
+
+                            <strong class="text-info"> Whinos</strong>
+
+
                             </a>
                         </p>
                     </div>
@@ -209,7 +224,9 @@
                 <div class="row d-flex justify-content-center">
                     <div class="text-center">
                         <ul class="list-undtyled list-inline">
-                            <a href="#" class="text-white"><li class="fab fa-facebook"></li></a>
+                            <a href="#" class="text-white">
+                                <li class="fab fa-facebook"></li>
+                            </a>
 
                         </ul>
                     </div>

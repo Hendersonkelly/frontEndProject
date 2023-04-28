@@ -13,8 +13,8 @@ body {
     width: 100vw;
     height: 100vh;
     font-family: 'Josefin Sans', sans-serif;
-    
-   
+
+
 }
 
 
@@ -152,8 +152,8 @@ header .container-fluid {
 }
 
 header .Navbar-logo img {
-    width: 140px;
-    height: 70px;
+    /* width: 140px; */
+    height: 80px;
 
 }
 
@@ -446,16 +446,18 @@ a {
 /* styling footer */
 
 .footer-bg {
-    background-color:#3f0709; 
+    background-color: #3f0709;
     color: #fff3b0;
- }
- .about-color{
+}
+
+.about-color {
     color: #fff3b0;
     font-size: 140%;
- }
- .whtcol-col{
-    color:#fff3b0;
-    font-size: 105%;
- }
+}
 
-  /* styling footer */
+.whtcol-col {
+    color: #fff3b0;
+    font-size: 105%;
+}
+
+/* styling footer */

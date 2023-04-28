@@ -6,13 +6,14 @@
 /*single glass url("https://images.unsplash.com/photo-1602800268804-4a850d622360?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"); */
 /* wall url("https://images.unsplash.com/photo-1572095755816-4a48d680f864?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=712&q=80") */
 /* four glasses url("https://images.unsplash.com/photo-1568213816046-0ee1c42bd559?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80"); */
-*{
+* {
     box-sizing: border-box;
     border: none;
     outline: none;
     padding: 0;
     margin: 0;
 }
+
 body {
     background-image: url("https://i0.wp.com/foodwineexperience.com/wp-content/uploads/2019/11/FoodandWineExperience_webbackground.jpg?ssl=1");
     background-size: cover;
@@ -21,8 +22,8 @@ body {
     /* width: 100vw;
     height:100vh; */
     font-family: 'Josefin Sans', sans-serif;
-    
-    
+
+
 }
 
 .btn-color {
@@ -35,7 +36,8 @@ body {
     background-color: #540b0e;
     border: 1px solid #fff3b0;
     padding: 10px 15px;
-   
+    padding: 14px 60px;
+    border-radius: 80px;
 }
 
 #pairMeButton:hover {
@@ -45,19 +47,13 @@ body {
 .button {
     color: #fff3b0;
     text-decoration: none;
-   
+
 }
 
 
 .button:hover {
     color: #fff3b0;
     text-decoration: none;
-}
-
-#pairMeButton {
-  
-    padding: 14px 60px;
-    border-radius: 80px;
 }
 
 .burgundy-bgc {
@@ -84,7 +80,7 @@ body {
     width: 100%;
     font-family: 'Josefin Sans', sans-serif;
     margin-bottom: 50%;
-  
+
 
 }
 
@@ -126,70 +122,76 @@ body {
     color: white;
 } */
 
-a{
+a {
     color: #540b0e;
 }
+
 a:link {
     text-decoration: none;
-    color:#540b0e;
+    color: #540b0e;
     font-family: 'Josefin Sans', sans-serif;
     font-size: 150%;
 
 }
-a:hover{
-    color:#540b0e ; 
+
+a:hover {
+    color: #540b0e;
 }
-header{
+
+header {
     width: 100vw;
     height: 100px;
-    background-color: white ;
-    box-shadow: 0px 3px 8px  rgba(0, 0 , 0, 25%);
+    background-color: white;
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 25%);
     padding: 20px;
-  
+
 }
 
 
 
-header .container-fluid{
+header .container-fluid {
     width: 100%;
     padding: 0 60px;
     align-items: center;
     justify-content: space-between;
-    background-color: white ;
-   
+    background-color: white;
+
 }
 
-header .Navbar-logo img{
-    width: 140px;
-    height:70px;
+header .Navbar-logo img {
+    /* width: 140px; */
+    height: 80px;
 }
-header .Navbar-items{
-    display:flex;
+
+header .Navbar-items {
+    display: flex;
     align-items: center;
     justify-content: flex-end;
-   
-}
-header .items{
- text-align: center;
- margin-inline: 15%;
- font-size: 20px;
- letter-spacing: 3px;
- color:#722F37;
- padding:5px 0;
- transition: all .1s ease;
- border-bottom: 0px solid #335c67;
- border-top: 0px solid #335c67;
- cursor:pointer;
 
 }
-header .items:hover{
-    border-bottom: 3px solid  #64d6f4;
+
+header .items {
+    text-align: center;
+    margin-inline: 15%;
+    font-size: 20px;
+    letter-spacing: 3px;
+    color: #722F37;
+    padding: 5px 0;
+    transition: all .1s ease;
+    border-bottom: 0px solid #335c67;
+    border-top: 0px solid #335c67;
+    cursor: pointer;
+
+}
+
+header .items:hover {
+    border-bottom: 3px solid #64d6f4;
     border-top: 3px solid #64d6f4;
 }
 
 /* ------------------------------- */
 
-header .item-button a{
+header .item-button a {
 
     background-color: #540b0e;
     width: 150px;
@@ -203,34 +205,34 @@ header .item-button a{
     transition: all .5s ease;
 }
 
-header .item-button a:hover{
+header .item-button a:hover {
 
     background-color: #540b0e;
 }
 
-header .mobile-toggler{
+header .mobile-toggler {
 
     font-size: 30px;
-    
+
 }
 
 /* modal------------------------------*/
 
-.modal-dialog{
+.modal-dialog {
 
     margin: 0;
     width: 430px;
 }
 
-@media(max-width: 450px){
+@media(max-width: 450px) {
 
-    .modal-dialog{
+    .modal-dialog {
 
         width: 82%;
     }
 }
 
-.modal-content{
+.modal-content {
 
     border-radius: 0;
     height: 100vh;
@@ -238,7 +240,7 @@ header .mobile-toggler{
     background-color: #540b0e;
 }
 
-.modal-header{
+.modal-header {
 
     display: flex;
     justify-content: space-between;
@@ -249,26 +251,26 @@ header .mobile-toggler{
     border-bottom: 2px solid #fefefe;
 }
 
-.modal-header img{
+.modal-header img {
 
     width: 140px;
     height: 66px;
     margin-top: 17.5px;
 }
 
-.modal-header .btn-close{
+.modal-header .btn-close {
 
     background: transparent;
     opacity: 1;
 }
 
-.modal-header i{
+.modal-header i {
 
     color: #fefefe;
     font-size: 30px;
 }
 
-.modal-body{
+.modal-body {
 
     width: 88%;
     margin: 0 auto;
@@ -276,7 +278,7 @@ header .mobile-toggler{
     flex: unset;
 }
 
-.modal-body .modal-line{
+.modal-body .modal-line {
 
     width: 100%;
     display: flex;
@@ -290,13 +292,13 @@ header .mobile-toggler{
     border-bottom: 1px solid #540b0e;
 }
 
-.modal-body .modal-line:hover{
+.modal-body .modal-line:hover {
 
     color: #fefefe;
     border-bottom: 1px solid #fefefe;
 }
 
-.modal-line a{
+.modal-line a {
 
     font-size: 17px;
     font-weight: 600;
@@ -304,17 +306,17 @@ header .mobile-toggler{
     color: #500303;
 }
 
-.modal-line i{
+.modal-line i {
 
     color: #540b0e;
     font-size: 30px;
     width: 35px;
     margin-right: 15px;
     padding: 0 0 3px 3px;
-    
+
 }
 
-.navb-button{
+.navb-button {
 
     width: 100%;
     height: 47px;
@@ -329,13 +331,13 @@ header .mobile-toggler{
     transition: all .5s ease;
 }
 
-.navb-button:hover{
+.navb-button:hover {
 
     background-color: #540b0e;
     color: #fefefe;
 }
 
-.mobile-modal-footer{
+.mobile-modal-footer {
 
     width: 87%;
     margin: 0 auto;
@@ -347,14 +349,14 @@ header .mobile-toggler{
     color: #540b0e;
 }
 
-.mobile-modal-footer i:hover{
+.mobile-modal-footer i:hover {
 
     color: #fefefe;
 }
 
 
 
-.section-1{
+.section-1 {
 
     width: 100vw;
     height: 95vh;
@@ -363,7 +365,7 @@ header .mobile-toggler{
     align-items: center;
 }
 
-.section-1 p{
+.section-1 p {
 
     font-size: 75px;
     font-weight: 700;
@@ -372,9 +374,9 @@ header .mobile-toggler{
     text-align: center;
 }
 
-@media(max-width:767px){
+@media(max-width:767px) {
 
-    .section-1 p{
+    .section-1 p {
 
         font-size: 50px;
         text-align: start;
@@ -382,64 +384,72 @@ header .mobile-toggler{
         margin: auto;
     }
 }
+
 /* items */
-.wine-item{
+.wine-item {
     text-align: left;
     margin-left: 15%;
     font-size: 17px;
     margin-bottom: 20%;
 }
-.wine-item h1{
-font-size: 50px;
-color:#335c67;
+
+.wine-item h1 {
+    font-size: 50px;
+    color: #335c67;
 
 
 }
-.wine-item h2{
-    font-size: 50px; 
+
+.wine-item h2 {
+    font-size: 50px;
 }
-.wine-item a{
+
+.wine-item a {
     text-decoration: none;
     display: inline-block;
-    color:#500303;
+    color: #500303;
     font-size: 20px;
     border: 2px solid #fff;
     padding: 14px 70px;
     border-radius: 50px;
-    margin-top:20px;
-    
+    margin-top: 20px;
+
 }
+
 .video-container {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-   
-  }
-  
-  .back-video {
+
+}
+
+.back-video {
     position: absolute;
-    
+
     left: 0;
     bottom: 0;
     z-index: -1;
-     width: 100%;
+    width: 100%;
     height: 50%;
-    object-fit: cover; 
-  }
-  /* styling footer */
+    object-fit: cover;
+}
 
-  .footer-bg {
-    background-color:#3f0709; 
+/* styling footer */
+
+.footer-bg {
+    background-color: #3f0709;
     color: #fff3b0;
- }
- .about-color{
+}
+
+.about-color {
     color: #fff3b0;
     font-size: 140%;
- }
- .whtcol-col{
-    color:#fff3b0;
-    font-size: 105%;
- }
+}
 
-  /* styling footer */
+.whtcol-col {
+    color: #fff3b0;
+    font-size: 105%;
+}
+
+/* styling footer */
